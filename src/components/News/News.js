@@ -1,21 +1,21 @@
 import React from 'react';
 import {Card, CardMedia, CardContent, Typography, CardActions, Button} from '@mui/material';
 
-const News = () => {
+const News = (props) => {
+    const {title, description, urlToImage} = props.article;
     return (
-        <Card sx={{ maxWidth: 345, backgroundColor: 'red' }}>
+        <Card sx={{ maxWidth: 345}}>
       <CardMedia
         sx={{ height: 140 }}
-        image="/static/images/cards/contemplative-reptile.jpg"
+        image={urlToImage}
         title="green iguana"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
+          {title}
         </Typography>
         <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
+          {description}
         </Typography>
       </CardContent>
       <CardActions>
