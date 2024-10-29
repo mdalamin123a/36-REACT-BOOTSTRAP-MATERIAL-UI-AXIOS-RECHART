@@ -1,24 +1,14 @@
-import logo from './logo.svg';
+import React from 'react';
+import Chart from './components/Chart/Chart';
 import './App.css';
+import StackedAreaChart from './components/Chart/StackedAreaChart';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Chart></Chart>
+      <StackedAreaChart></StackedAreaChart>
+    </>
   );
 }
 
