@@ -1,13 +1,4 @@
-1. installing material ui. it is alternative of react-bootstrap
-==> npm install @mui/material @emotion/react @emotion/styled
-2. use material ui component by {} import component from @mui/material
-==> import {Button} from '@mui/material';
-==> function App(){
-return (
-<Button varient="secondary" color="primary"></Button>
-);
-}
-3. varient attribute is used to give background color on component and color attribute is used to give text color on component
-==> <Button varient="secondary" color="primary"></Button>
-4. sx attribute is used to give incline style on component
-==> <Button sx={{color:'red'}}></Button>
+1. install axios. axios is alternative to fetch. it is better than fetch 
+ ==> npm install axios --save;
+2. call api in axios.
+ ==> axios(apiUrl).than(data => console.log(data))
